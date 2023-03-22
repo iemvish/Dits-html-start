@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--primary-font-family);
+    background-color: #e6edec;
+}
+
+
+
+.wrapper{
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0 18px;
+    width: 100%;
+}
+nav{
+    background-color: #F0F8FF;
+}
+nav ul{
+   list-style: none;
+   display: flex;
+   justify-content: center;
+}
+nav ul li{
+    display: inline-flex;
+    text-transform: uppercase;
+    padding: 21px;
+    transition: 3s;
+    
+}
+nav ul li:hover{
+    background-color: #007bff;
+    transform: scale(1.1);
+    text-decoration: underline;
+    color: #ffffff;
+    background-position: left bottom;
+}
+nav ul li:hover a{
+    color: #ffffff;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+nav ul li a i{
+    padding-right: 5px;
+}
+header{ 
+    display: flex;
+   justify-content: center;
+}
+.header-logo{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.header-logo img:hover{
+    transform:rotate(360deg);
+	
+  }
+
+
+.header-logo img{
+    width: 40px;
+    height: 40px;
+    transition:4s;
+}
+.nav-item{
+    width: 70%;
+}
+.login-btn{
+    width: 15%;
+    display: flex;
+   justify-content: center;
+   align-self: center;
+    
+}
+.login-btn button:hover{
+    background-color: #2e8b57;
+}
+.login-btn i{
+    padding-right: 5px;
+}
+.login-btn button{
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: #007bff;
+    color: #ffffff;
+}
+.first-section{
+    width: 100%;  
+    border: 1px solid;
+    background-color: #ff0000;
+}
+.second-section{
+    width: 100%;  
+    
+}
+.second-section form{
+    padding-bottom: 35px;
+}
+.first-section h1{
+    padding-top: 10px;
+    text-align: start;
+    width: 10%;
+}
+table, td, th{ 
+    border: 1px solid;
+    height: 40px;
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 30px auto;
+    
+  }
+ 
+  .second-section .first-input, .middle-input, .last-input{
+    float: left;
+    width: 33.33%;
+  }
+  .second-section{
+    display: flex;
+    border: 1px solid;
+  }
+  .second-section .form-input{
+      width:100%;
+  }
+  form{
+    width: 100%;
+  }
+  .form-input{
+    text-align: center;
+  }
+ form input[type="text"]{
+    padding: 10px;
+    margin-top: 5px;
+ }
+.third-section .outer-div input[type="password"]
+{
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+ .third-section{
+    width: 100%;
+    display: flex;
+    border: 1px solid;
+    background-color: #9a56c7;
+ }
+ .outer-div{
+    width: 50%;
+    border: 1px solid;
+    height: 230px;
+    padding: 10px;
+ }
+ .outer-div select{
+    padding: 10px;
+    width: 100%;
+ }
+ 
+ .left-outer-div label{
+    margin-right: 12px;
+ }
+ .outer-div .submit-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+ }
+ .outer-div .submit-button button{
+    padding: 8px 30px;
+    border-radius: 8px;
+    border:none;
+    background-color: #28a745;
+    color: #ffffff;
+ }
+ .outer-div .submit-button button:hover{
+ background-color:#007bff;
+ }
+ footer{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    border: 1px solid;
+    overflow: auto;
+    background-color: #ffffff;
+ }
+ footer p{
+    padding: 10px 25px;
+    line-height: 1.5;
+    color: #ff0000;
+ }
+ .first-section h1,h4, .second-section h2,h4{
+    margin-left: 10px;
+ } 
+ h1,h2{
+    font-family: var(--heading-font-family);
+  
+ }
+ h4{
+    font-family: var(--secondary-font-family);
+
+ }
+ 
+
+
+@media only screen and (max-width: 600px) {
+    .second-section .first-input, .second-section .middle-input, .second-section .last-input{
+        width: 100%; 
+    }
+    
+  form{
+    width: 100%;
+    text-align: center;
+  }
+  .third-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .third-section .outer-div{
+    width: 100%;
+  }
+
+ 
+}

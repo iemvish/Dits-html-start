@@ -1,0 +1,160 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+.container{
+	width:100%;
+	float:left;
+}
+.wrapper{
+	max-width:1200px;
+	margin:0 auto;
+	padding: 0 18px;
+	width:100%;
+}
+
+nav{
+	width:100%;
+   background-color:#1188f0;
+   height:80px;
+   position:fixed;
+   z-index:1;
+
+}
+nav ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+	  text-align:center;
+}
+
+nav ul li{
+	display:inline-block;
+	text-transform:uppercase;
+	padding:29px
+	
+}
+nav ul li:hover{
+	background-color:#00ff00;
+	text-decoration:underline #ff0000;
+}
+nav ul li:hover a{
+	color:#1188f0;
+}
+nav ul li a{
+text-decoration:none;
+color:#ffffff;
+}
+
+.main-box{
+	width:100%;
+	margin-top:80px;
+}
+.main-box .first-outer-box{
+	height:500px;
+	width:33.33%;
+	border:1px solid;
+	float:left;
+	border-style:dotted;
+	position:relative;
+}
+.main-box .second-outer-box{
+	height:500px;
+	width:33.33%;
+	border:1px solid;
+	float:left;
+	border-style:dashed;
+	position:relative;
+}
+.main-box .third-outer-box{
+	height:500px;
+	width:33.33%;
+	border:1px solid;
+	float:left;
+	border-style:solids;
+	position:relative;
+}
+.first-outer-box .inner-box{
+	height:100px;
+	width:100px;
+	border:1px solid;
+	position:absolute;
+	top: 50%;
+    right: 0;
+    transform: translate(50%,-50%);
+}
+.second-outer-box .inner-box{
+	height:100px;
+	width:100px;
+	border:1px solid;
+	position:absolute;
+	top: 0;
+    right: 0;
+}
+.third-outer-box .inner-box{
+	height:100px;
+	width:100px;
+	border:1px solid;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(100%);
+}
+
+.second-section .outer-box{
+height:500px;
+width:50%;
+border:1px solid;
+float:left;
+padding: 10px 60px;
+}
+.second-section .outer-box ol li:nth-child(odd){
+	color:#1188f0;
+}
+
+.second-section .outer-box ol li:nth-child(even){
+    color:#ff0000;
+}
+
+.sticky{
+  position: sticky;
+  top: 240px;
+height: 150px;
+width: 300px;
+position: sticky;
+z-index:2;
+}
+footer .first-box{
+	width:25%;
+	height:500px;
+	border:1px solid;
+	float:left;
+	background-image:url("../image/d.jpg");
+	background-size:cover;
+}
+footer .second-box{
+	width:25%;
+	height:500px;
+	border:1px solid;
+	float:left;
+	background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+	
+}
+footer .third-box{
+	width:25%;
+	height:500px;
+	border:1px solid;
+	float:left;
+	background-image:url("../image/d.jpg");	
+	background-size:cover;
+	
+}
+footer .fourth-box{
+	width:25%;
+	height:500px;
+	border:1px solid;
+	float:left;
+	 background-image: linear-gradient(to right, red , yellow);
+	
+}

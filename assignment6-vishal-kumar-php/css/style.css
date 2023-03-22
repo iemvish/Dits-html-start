@@ -1,0 +1,207 @@
+:root{
+    --primary-font-family:'Lato';
+    --secondary-font-family:'Roboto';
+    --heading-font-family:'Poppins';
+}
+
+body{
+    font-family: var(--primary-font-family);
+}
+@media screen and (max-width: 575px) {
+width:100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0 18px;
+    width: 100%;
+}
+nav{
+    background-color: #F0F8FF;
+}
+nav ul{
+   list-style: none;
+   text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 30px;
+   
+
+  background: linear-gradient(to right, #ff0000 50%, #F0F8FF 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+    
+}
+nav ul li:hover{
+    background-color: #ff0000;
+    transform: scale(1.1);
+    text-decoration: underline;
+    color: #ffffff;
+    background-position: left bottom;
+}
+nav ul li:hover a{
+    color: #ffffff;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+nav ul li a i{
+    padding-right: 5px;
+}
+header{
+    width: 100%;
+    height: 80px;
+}
+.header-logo{
+    width: 15%;
+    float: left;
+    height: 100px;
+}
+.header-logo img:hover{
+    animation: rotate 5s;
+  
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.header-logo img{
+    width: 60px;
+    height: 60px;
+    object-fit: fill;
+    margin-top: 10px;
+}
+.nav-item{
+    width: 70%;
+    float: left;
+}
+.login-btn{
+    width: 15%;
+    float: left;
+    text-align: end;
+    margin-top: 25px;
+    
+}
+.login-btn button:hover{
+    background-color: #2e8b57;
+}
+.login-btn i{
+    padding-right: 5px;
+}
+.login-btn button{
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: #007bff;
+    color: #ffffff;
+}
+.first-section{
+    width: 100%;  
+    border: 1px solid;
+}
+
+.first-section h1{
+    padding-top: 10px;
+    text-align: start;
+    width: 10%;
+}
+table, td, th{ 
+    border: 1px solid;
+    height: 40px;
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 30px auto;
+  }
+  .second-section form{
+    height: 200px;
+    border: 1px solid;
+  }
+  .second-section .first-input, .middle-input, .last-input{
+    float: left;
+    width: 30%;
+  }
+  .second-section .middle-input{
+    margin: 0 46px;
+  }
+  .second-section .form-input{
+      width: 80%;
+      margin: 0 auto;
+  }
+ form input[type="text"]{
+    padding: 10px;
+    width: 100%;
+    margin-top: 5px;
+ }
+.third-section .outer-div input[type="password"]
+{
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+ .third-section{
+    width: 100%;
+    float: left;
+    border: 1px solid;
+ }
+ .third-section .outer-div{
+    width: 50%;
+    border-right: 1px solid;
+    float: left;
+    padding: 38px 38px;
+    height: 230px;
+ }
+ .outer-div select{
+    padding: 6px;
+    width: 100%;
+ }
+ 
+ .third-section .outer-div label{
+    margin-right: 12px;
+ }
+ .third-section .outer-div .submit-button{
+    width: 100%;
+    text-align: center;
+ }
+ .third-section .outer-div .submit-button button{
+    padding: 8px 30px;
+    border-radius: 8px;
+    border:none;
+    background-color: #28a745;
+    color: #ffffff;
+ }
+ .third-section .outer-div .submit-button button:hover{
+ background-color:#007bff;
+ }
+ footer{
+    height: 200px;
+    width: 100%;
+    float: left;
+    border: 1px solid;
+    overflow: auto;
+ }
+ footer p{
+    padding: 10px 25px;
+    line-height: 1.5;
+ }
+ .first-section h1,h4, .second-section h2,h4{
+    margin-left: 10px;
+ } 
+ h1,h2{
+    font-family: var(--primary-font-family);
+ }
+ h4{
+    font-family: var(--secondary-font-family);
+ }
